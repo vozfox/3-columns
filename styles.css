@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  
+}
+.container{
+  width: 80%;
+  height: 46.4rem;
+  /* background-color: pink; */
+  margin: 0 auto;
+}
+.column-holder{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.sedan, .suv, .luxury{
+  width: 23%;
+  height: 65%;
+  padding: 2rem;
+}
+.sedan{
+  background-color: #E28525;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.suv{
+  background-color: #016972;
+}
+.luxury{
+  background-color: #00403F;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+/* .logo-holder{
+  width: 40%;
+  height: 15%;
+  background-color: darkmagenta;
+} */
+.box-logo{
+  width: 60px;
+  margin: 1rem 0rem 0rem 1rem;
+}
+.box-header{
+  font-family: oswald;
+  font-size: 2rem;
+  margin: 3rem 0rem 2rem 0rem;
+  color: white;
+}
+.box-description{
+  font-family: quicksand;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5rem;
+}
+.btn-holder{
+  background-color: white;
+    padding-top: 4px;
+    width: 8rem;
+    margin: 1rem 1rem 1rem 1rem;
+    display: block;
+    margin-top: 3.5rem;
+    border-radius: 2rem;
+    height: 3rem;
+    font-family: quicksand;
+}
+.btn-holder:hover{
+  border: 0.1rem solid white;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+}
+.footer-link{
+  text-decoration: none;
+  font-size: 1rem;
+  margin-left: 1.5rem;
+  padding-bottom: 1rem;
+}
+.footer-link:hover{
+  color: white;
+  margin-top: 1rem;
+}
+
+.footer-link-color1{
+  color: #E28525;
+}
+.footer-link-color2{
+  color: #016972;
+}
+.footer-link-color3{
+  color: #00403F;
+}
+@media screen and (max-width: 426px) {
+  .container{
+    width: 100%;
+    height: auto;
+  }
+  .column-holder{
+    flex-direction: column;
+  }
+  .sedan, .suv, .luxury{
+    width: 85%;
+    height: 60%;
+    padding: 2rem;
+  }
+  .sedan{
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0;
+    margin-top: 3rem;
+  }
+  .luxury{
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    margin-bottom: 3rem;
+  }
+  .btn-holder{
+    width: 10rem;
+  }
+  .footer-link{
+    margin-left: 2.3rem;
+  }
+}
